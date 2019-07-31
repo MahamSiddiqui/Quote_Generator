@@ -45,7 +45,7 @@ let arrayOfQuote = [
 ];
 function generateQuote() {
     let random = Number.parseInt(Math.random() * arrayOfQuote.length + 1);
-    document.querySelector("#quoteOutput").textContent = `${arrayOfQuote[random].quote}`;
-    document.querySelector("#authorOutput").textContent = `${arrayOfQuote[random].author}`;
+    document.querySelector("#quoteOutput").textContent = `"${arrayOfQuote[random].quote}"`;
+    document.querySelector("#authorOutput").textContent = `"${arrayOfQuote[random].author}"`;
 
 }

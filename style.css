@@ -1,1 +1,93 @@
-/* write code here. */
+body{
+   margin: 0;
+   padding: 0;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 3em;
+    padding-top: 20px;
+    
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    height: 40px;
+    background:#00072f;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40px;
+    color: #555;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    transition: 5s;
+    overflow: hidden;
+}
+button:hover{
+    color: #fff;
+    box-shadow: -15px 0 15px rgba(255, 20, 152,1),15px 0 15px rgba(255, 0, 255,1);
+    text-shadow: 0 0 0 10px rgba(255, 255, 255, 0.50)
+    , 0 0 0 25px rgba(255, 255, 255, 0.50)
+    , 0 0 0 35px rgba(255, 255, 255, 0.50);
+}
+button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background:rgba(255, 20, 152,0);
+    filter:blur(4px);
+    transition: 5s;
+    z-index: -1;
+}
+button:hover:before{
+   
+    background:rgba(255, 20, 152,1);
+    transform: scaleX(5);
+}
+
+button:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background:rgba(122, 0, 255,0);
+    filter:blur(4px);
+    transition: 5s;
+    z-index: -1;
+    mix-blend-mode:lighten;
+}
+button:hover:after{
+           
+    background:rgba(122, 0, 255,1);
+    transform: scaleX(5);
+ }
+            
